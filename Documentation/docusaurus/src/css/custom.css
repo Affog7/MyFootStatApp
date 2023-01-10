@@ -1,0 +1,72 @@
+/**
+ * Any CSS included here will be global. The classic template
+ * bundles Infima by default. Infima is a CSS framework designed to
+ * work well for content-centric websites.
+ */
+
+/* You can override the default Infima variables here. */
+:root {
+  color: var(--cf-color-primary);
+  --ifm-color-primary: var(--cf-color-accent-secondary);
+  --ifm-color-secondary: var(--cf-color-accent-primary);
+  --ifm-color-primary-dark: var(--cf-color-accent-secondary);
+  --ifm-color-secondary-dark: var(--cf-color-accent-secondary);
+  --ifm-color-primary-darker: #277148;
+  --ifm-color-primary-darkest: #205d3b;
+  --ifm-color-primary-light: #33925d;
+  --ifm-color-primary-lighter: #359962;
+  --ifm-color-primary-lightest: #3cad6e;
+  --ifm-code-font-size: 80%;
+  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
+  --cf-color-primary: #021d1e;
+  --cf-color-secondary: #023c40;
+  --cf-background-color-primary: #f0eff4;
+  --cf-background-color-secondary: #bfb8ba;
+  --cf-background-color-nocolor: #ffffff;
+  --cf-background-color-footer: var(--cf-color-primary);
+  --cf-color-accent-primary: #3ddc97;
+  --cf-color-accent-secondary: #62929e;
+  --cf-logo:"logo.svg";
+  --border-radius-default: 20px;
+}
+
+/* For readability concerns, you should choose a lighter palette in dark mode. */
+[data-theme='dark'] {
+  color: var(--cf-color-primary);
+  --ifm-color-primary: var(--cf-color-accent-secondary);
+  --ifm-color-secondary: var(--cf-color-accent-primary);
+  --ifm-color-primary-dark: var(--cf-color-accent-secondary);
+  --ifm-color-secondary-dark: var(--cf-color-accent-secondary);
+  --ifm-color-primary-darker: #1fa588;
+  --ifm-color-primary-darkest: #1a8870;
+  --ifm-color-primary-light: #29d5b0;
+  --ifm-color-primary-lighter: #32d8b4;
+  --ifm-color-primary-lightest: #4fddbf;
+  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+  --cf-color-primary: #f0eff4;
+  --cf-color-secondary: #bfb8ba;
+  --cf-background-color-primary: #023c40;
+  --cf-background-color-secondary: #021d1e;
+  --cf-background-color-nocolor: #021d1e;
+  --cf-color-accent-primary: #3ddc97;
+  --cf-color-accent-secondary: #62929e;
+  --cf-background-color-footer: var(--cf-background-color-secondary);
+  --ifm-font-color-base:var(--cf-color-primary);
+  --ifm-global-spacing: 1rem;
+  --ifm-spacing-vertical: var(--ifm-global-spacing);
+  --cf-logo:"LOGO_CODE1ERT_BLANC_VERT.svg";
+  --ifm-navbar-background-color: var(--cf-background-color-secondary);
+}
+
+.footer {
+  --ifm-footer-background-color: var(--cf-background-color-footer);
+}
+
+.myOneAndOnlyHightlightedCodeBlock {
+  background-color: var(--cf-background-color-primary);
+  display: block;
+  margin: 0 calc(-1 * var(--ifm-pre-padding));
+  padding: 0 var(--ifm-pre-padding);
+  border-left: 3px solid var(--cf-color-accent-primary);
+}
+

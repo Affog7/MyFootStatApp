@@ -1,0 +1,23 @@
+kind: pipeline
+type: docker
+name: CI
+ 
+trigger:
+  event:
+    - push
+
+steps:
+  - name: generate-and-deploy-docs
+    image: hub.codefirst.iut.uca.fr/thomas.bellembois/codefirst-docdeployer
+    volumes:
+      - name: docs
+        path: /docs
+    commands:
+      - /entrypoint.sh
+    when:
+      branch:
+        - main
+
+volumes:
+- name: docs
+  temp: {}

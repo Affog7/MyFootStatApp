@@ -1,0 +1,9 @@
+{
+    "label": "Folder",
+    "position": 3,
+    "link": {
+        "type": "generated-index",
+        "description": "Short description for this section"
+    }
+}
+  

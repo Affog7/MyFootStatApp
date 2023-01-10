@@ -1,0 +1,14 @@
+{
+  "version.label": {
+    "message": "Suivant",
+    "description": "The label for version current"
+  },
+  "sidebar.tutorialSidebar.category.Folder": {
+    "message": "Dossier",
+    "description": "The label for category Folder in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Folder.link.generated-index.description": {
+    "message": "Courte description pour cette section",
+    "description": "The generated-index page description for category Folder in sidebar tutorialSidebar"
+  }
+}
