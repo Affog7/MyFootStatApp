@@ -6,8 +6,19 @@ Cette application conçue pour afficher la liste d'un nombre de joueurs professi
 * L'utilité est de permettre à l'utilisateur de commenter ces differentes stats au fur et à mesures quelles changes.
 * Le but de cette application est principalement de suivre l'évolution d'un joueur au cours d'une saison.
 
+FOOTAPP est un exemple d'application de statistiques des joueurs, construit avec
+[Jetpack Compose] (https://developer.android.com/jetpack/compose). Le but de l'échantillon est de
+présenter les capacités actuelles de l'interface utilisateur de Compose.
 
-Imprtation
+Pour essayer cet exemple d'application, utilisez la dernière version stable
+de [Android Studio](https://developer.android.com/studio).
+Vous pouvez cloner ce dépôt ou importer le
+projet d'Android Studio en suivant les étapes
+[ici](https://developer.android.com/jetpack/compose/setup#sample).
+
+## Captures d'écran
+
+Importation
 ---------------
 
 Pour créer ce projet, utilisez "Importer un projet" dans Android Studio.
