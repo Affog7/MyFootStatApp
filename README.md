@@ -1,41 +1,58 @@
-# Website
+Suivi des statistiques des joueurs de football
+===================================
 
-This website is built using [Docusaurus 2](https://docusaurus.io/), a modern static website generator.
+Cette application conçue pour afficher la liste d'un nombre de joueurs professionnels, avec leurs statistiques individuelles, leur informations professionnelles,
 
-### Installation
+* L'utilité est de permettre à l'utilisateur de commenter ces differentes stats au fur et à mesures quelles changes.
+* Le but de cette application est principalement de suivre l'évolution d'un joueur au cours d'une saison.
 
-```
-$ yarn
-```
 
-### Local Development
+Imprtation
+---------------
 
-```
-$ yarn start
-```
+Pour créer ce projet, utilisez "Importer un projet" dans Android Studio.
 
-This command starts a local development server and opens up a browser window. Most changes are reflected live without having to restart the server.
+Caractéristiques
+---------------
 
-### Build
+L'application comporte trois composants principaux : la liste complète des joueurs de la ligue 1, la liste des commentaires écrits sur un joueur ,les statistiques individuelles des joueurs et leur statistiques dans leur club. Pour les commentaires l'utilisateur est appelé à :
+- Voir le nombre de commentaires fait sur un joueurs, 
+- il peut supprimer mais pas modifier,
+- l'ajout d'un commentaire se fait en rentrant uniquement le texte (commentaire) et le système s'en charge du reste à savoir : la date , les information sur le joueur.
 
-```
-$ yarn build
-```
+<div>
+   <img src="screen/A.png" alt="Liste des joueurs" width="20%"/>
+   <img src="screen/B.png" alt="Statistique sur le joueur HAKIMI" width="20%"/>
+   <img src="screen/C.png" alt="Ajout d'un nouveau commentaire" width="20%"/>
+   <img src="screen/D.png" alt="La saisir du commentaire" width="20%"/>
+   <img src="screen/E.png" alt="Ajout effectué - avec la liste ajout " width="20%"/>
+</div>
 
-This command generates static content into the `build` directory and can be served using any static contents hosting service.
+Architecture
+---------------
 
-### Deployment
+L'architecture est presque entièrement construite autour des [composants de l'architecture Android](https://developer.android.com/topic/libraries/architecture/).
 
-Using SSH:
+Cela a été un long processus car j'ai initialement créé l'application sans suivre les guides d'architecture d'applications d'Android. Par conséquent, j'ai migré lentement l'application. Cela inclut l'utilisation du [composant de navigation](https://developer.android.com/guide/navigation) pour réduire le nombre d'activités, en faveur des fragments, et rendre généralement le code plus idiomatique. J'ai également fait la transition vers l'utilisation de [ViewModel](https://developer.android.com/topic/libraries/architecture/viewmodel)s pour aider à séparer la logique et le code lié à l'interface utilisateur. L'application utilise également [view binding](https://developer.android.com/topic/libraries/view-binding) pour éliminer le risque de pointeurs nuls et supprimer également le besoin de types de codage explicites.
 
-```
-$ USE_SSH=true yarn deploy
-```
+Room
+---------------
 
-Not using SSH:
+La persistance des données 
 
-```
-$ GIT_USER=<Your GitHub username> yarn deploy
-```
+APIFOOTBALL
+---------------
+La liste complète des joueurs ainsi que leur statistiques sont récuperer via l'API REST <a href="https://apiv3.apifootball.com">APIFOOTBALL<a/> : un fournisseur des données footbalistiques, il fournit une base complète des joueurs ainsi leur stats de manière permanente.
 
-If you are using GitHub pages for hosting, this command is a convenient way to build the website and push to the `gh-pages` branch.
+
+Kotlin
+---------------
+
+À l'été 2020, j'ai décidé de réécrire l'intégralité de l'application en Kotlin. Il y avait de nombreuses raisons à cela, y compris, mais sans s'y limiter, un code plus idiomatique, une sécurité nulle, une inférence de type, des classes plus intelligentes et moins de code passe-partout. J'ai également tiré parti de la fonctionnalité améliorée fournie par les [extensions Android KTX] (https://developer.android.com/kotlin/ktx).
+
+
+
+# License
+
+**Now in Android** is distributed under the terms of the Apache License (Version 2.0). See the
+[license](LICENSE) for more information.
