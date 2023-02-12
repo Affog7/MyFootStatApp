@@ -1,7 +1,7 @@
 Suivi des statistiques des joueurs de football
 ===================================
 
-Cette application conçue pour afficher la liste d'un nombre de joueurs professionnels, avec leurs statistiques individuelles, leur informations professionnelles,
+Cette application conçue pour afficher la liste d'un nombre de joueurs professionnels, avec leurs statistiques individuelles, leur informations professionnelles, 
 
 * L'utilité est de permettre à l'utilisateur de commenter ces differentes stats au fur et à mesures quelles changes.
 * Le but de cette application est principalement de suivre l'évolution d'un joueur au cours d'une saison.
