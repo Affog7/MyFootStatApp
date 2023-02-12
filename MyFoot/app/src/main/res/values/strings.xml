@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">FOOTAPP - JOUEURS </string>
+    <string name="title_activity_details_joueur">DetailsJoueur</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">DETAILS JOUEUR</string>
+    <string name="second_fragment_label">AJOUT DES COMMENTS</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="supcomm">Supprimer</string>
+    <string name="datecomments">Date du commentaire</string>
+    <string name="ajouterCmt">Ajouter</string>
+    <string name="cmt">COMMENTAIRES</string>
+    <string name="stat">STATISTIQUES</string>
+    <string name="save">Enregistrer</string>
+    <string name="defaultval">Player - PSG</string>
+    <string name="text_cmt">AJOUT DE COMMENTAIRE</string>
+</resources>

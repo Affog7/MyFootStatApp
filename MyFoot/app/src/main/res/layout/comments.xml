@@ -1,0 +1,74 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linearLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="10dp"
+    android:background="#A9C1CFCF"
+    android:backgroundTintMode="src_over"
+    android:elevation="2dp"
+    android:orientation="vertical"
+    android:outlineProvider="bounds"
+    android:padding="25dp">
+
+
+    <TextView
+        android:id="@+id/comments"
+        android:layout_width="174dp"
+        android:layout_height="45dp"
+        android:layout_marginBottom="15dp"
+        android:background="#EDDDDD"
+        android:fontFamily="sans-serif-black"
+        android:outlineProvider="paddedBounds"
+        android:padding="10dp"
+        android:text="Commentaire"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/delete_button"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.116" />
+
+    <ImageButton
+        android:id="@+id/delete_button"
+        android:layout_width="65dp"
+        android:layout_height="69dp"
+        android:screenReaderFocusable="false"
+        android:src="@android:drawable/ic_delete"
+        android:text="@string/supcomm"
+        android:textSelectHandleRight="@android:drawable/ic_dialog_info"
+        app:layout_constraintBaseline_toBaselineOf="@+id/comments"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/comments"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <TextView
+        android:id="@+id/comments_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/datecomments"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.187"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.803" />
+
+    <View
+        android:id="@+id/divider2"
+        android:layout_width="10dp"
+        android:layout_height="86dp"
+        android:background="?android:attr/listDivider"
+        android:backgroundTint="#DDA4AADA"
+        android:backgroundTintMode="add"
+        android:hapticFeedbackEnabled="false"
+        android:outlineAmbientShadowColor="#AA2929"
+        android:outlineSpotShadowColor="#8A2323"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.32" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
